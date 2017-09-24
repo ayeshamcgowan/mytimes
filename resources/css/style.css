@@ -42,7 +42,8 @@ nav a{
 
 .container{
   display:flex;
-  justify-content: space-around;
+  flex-flow:row nowrap;
+  justify-content: space-between;
   position: relative;
   top: 80px;
   margin: 20px 20px;
@@ -50,10 +51,12 @@ nav a{
 
 }
 .column{
-  display: flex;
-    flex-direction: column;
-    margin-right: 32px;
+    display: inline-flex;
     border: 1px black solid;
+    margin-right: 32px;
+    position: relative;
+    flex-flow: column wrap;
+
 }
 
 .column.large {
@@ -62,6 +65,7 @@ nav a{
 
 .column.medium {
   width: 300px;
+
 }
 
 .column.small {
@@ -80,18 +84,15 @@ h1{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
+    justify-content: space-between;
+    width: 630px;
   }
+
   .story {
     display: block;
     width: 300px;
-  }
-  .story2 {
+}
 
-    margin-left: 20px;
-    display: block;
-    width: 300px;
-  }
 
 .image{
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png');
