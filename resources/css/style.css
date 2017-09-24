@@ -77,14 +77,19 @@ h1{
 }
 
 .stories {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 17px;
-    flex-flow: nowrap row;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
   }
   .story {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 300px;
+  }
+  .story2 {
+
+    margin-left: 20px;
+    display: block;
     width: 300px;
   }
 
