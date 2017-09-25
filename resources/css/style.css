@@ -52,24 +52,30 @@ header a{
   justify-content: space-between;
   position: relative;
   top: 80px;
-  margin: 20px 20px 120px 20px;
-  padding: 40px;
+  margin: 20px 0px 120px 0px;
+  padding: 40px 0px;
 
 }
 .column{
 
     position: relative;
     flex-flow: column wrap;
-    padding-right: 20px;
+
 
 }
 
 .column.large {
-  width: 630px;
+width: 630px;
+padding-right: 20px;
+}
+
+.topimage span{
+  padding-left: 20px;
 }
 
 .column.medium {
   width: 300px;
+  padding-right: 20px;
 
 }
 
@@ -100,16 +106,17 @@ h1{
 }
 
 
-.image{
+.topimage{
+  display: flex;
     background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png');
-    width: 630px;
     margin-top: 0;
     font-size: 40px;
-    text-align: left;
     color: white;
     font-weight: bold;
     font-family: Georgia;
     height: 300px;
+    width: 629px;
+    align-items: center;
 }
 
 .earth.image{
